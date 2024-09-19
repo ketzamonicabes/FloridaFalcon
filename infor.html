@@ -1,13 +1,13 @@
 
 <!-- saved from url=(0012)about:srcdoc -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>window.onmessage = function(event) {event.source.postMessage({iframeId: event.data, scrollHeight: document.body.getBoundingClientRect().height || document.body.scrollHeight}, event.origin);};</script></head><body style="margin: 0">
-
-
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <title>Storm Report</title>
     <style>
         body {
@@ -15,15 +15,15 @@
             color: #333;
             margin: 0;
             padding: 20px;
+            box-sizing: border-box;
         }
-       
         h1 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             color: #b22222; /* Dark red color for a dramatic headline */
             margin-bottom: 10px;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.1em;
             line-height: 1.6;
             color: #333;
         }
@@ -32,7 +32,7 @@
             font-weight: bold;
         }
         blockquote {
-            font-size: 1.1em;
+            font-size: 1em;
             font-style: italic;
             border-left: 5px solid #b22222;
             padding-left: 10px;
@@ -49,29 +49,46 @@
             color: #555;
         }
         img {
-          display: block;
-            margin: 20px auto; /* Căn giữa chỉ ảnh */
-            width: 600px;  /* Bạn có thể điều chỉnh kích thước theo ý muốn */
+            display: block;
+            margin: 20px auto;
+            width: 100%;  /* Make the image responsive */
+            max-width: 600px;
+            height: auto;
+        }
+
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p, blockquote {
+                font-size: 1em;
+            }
+            img {
+                width: 100%; /* Ensures the image takes up full width on small screens */
+            }
         }
     </style>
-
-
-
-
-    
+</head>
+<body>
 
     <blockquote>
         “We’re expecting scattered storms to develop in just the next few days near Doral’s Florida Turnpike and by the time they reach Sweetwater, it should be less severe. Tracking these insurges of temperature and rain, we saw some coastal flooding – and it’s not hard to imagine flash flooding, if this continues inward. I’m not sure what the official weather advisories are, so look out for those when they’re released – but be on guard for the time being.”
         <span class="quote-author">– Final comments from Dr. Fleischmann</span>
     </blockquote>
-    <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2157367507.jpg?c=16x9&amp;q=h_833,w_1480,c_fill" alt="Car stuck in flood" width="600">
+
+    <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2157367507.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="Car stuck in flood">
+
     <p>
         There’s also a cruel hand of luck here, where Hialeah was almost completely missed in this storm’s path. Locals are reporting sparse, light rains from the trailing clouds. Roads at Hialeah remain functional, along with businesses and schools.
     </p>
+
     <p>
         Aside from social media posts and minor news coverage, there haven't been any city decisions and advisories issued for Doral as of yet. We will faithfully remain vigilant on your behalf. As for me, I’m getting my dry cleaning done at Hialeah.
     </p>
 
-
-
-</body></html>
+</body>
+</html>
